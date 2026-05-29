@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border/40 bg-background py-8">
       <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-        <div className="mb-4 flex justify-center space-x-4 md:space-x-6 items-center">
+        <div className="mb-4 flex flex-wrap justify-center gap-4 md:gap-6 items-center">
           <Link href="/legal/disclaimer" className="hover:text-primary transition-colors">
             Disclaimer
           </Link>
@@ -23,7 +23,11 @@ export function Footer() {
           <Link href="/contact" className="hover:text-primary transition-colors">
             Contact
           </Link>
-          <Link href="mailto:architect@inferenceroi.com" className="flex items-center gap-1 hover:text-primary transition-colors">
+          <Link href="https://www.linkedin.com/in/atharv-patil-bab53a284/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary transition-colors">
+            <Linkedin className="h-4 w-4" />
+            LinkedIn
+          </Link>
+          <Link href="mailto:atharvpatileoxs@gmail.com" className="flex items-center gap-1 hover:text-primary transition-colors">
             <Mail className="h-4 w-4" />
             Email
           </Link>
